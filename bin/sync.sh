@@ -5,7 +5,7 @@ DOTFILES_DIR="$HOME/dotfiles"
 cd "$DOTFILES_DIR" || exit
 
 # 1. Check for changes
-if [[ -n $(git status -porcelain) ]]; then
+if [[ -n $(git status --porcelain) ]]; then
     echo "🔄 Changes detected in dotfiles."
     
     # 2. Stage all changes
