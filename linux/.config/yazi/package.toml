@@ -1,0 +1,17 @@
+[plugin]
+deps = []
+
+[[flavor.deps]]
+use = "kmlupreti/ayu-dark"
+rev = "648a178"
+hash = "97124aae31cd2a5cae41c93f804996a5"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-macchiato"
+rev = "ca61658"
+hash = "2f60298d6c26b6d388c8091a9389fa8f"
+
+[[flavor.deps]]
+use = "melindachang/kanagawa-paper"
+rev = "7f3cd1d"
+hash = "3f84eceb475a9d1c1ea911d93a1d1898"

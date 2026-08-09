@@ -1,0 +1,17 @@
+return {
+  "R-nvim/R.nvim",
+  lazy = false,
+  config = function()
+    require("r").setup({
+      external_term = "",
+      rconsole_width = 57,
+      min_editor_width = 18,
+      hook = {
+        on_filetype = function()
+          vim.keymap.set("n", "<CR>", "<Plug>RDSendLine", { buffer = true })
+          vim.keymap.set("v", "<CR>", "<Plug>RSendSelection", { buffer = true })
+        end,
+      },
+    })
+  end,
+}
